@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2">
     <link rel="stylesheet" href="style.css">
     <title>Hate World</title>
 </head>
+
+<script type="text/javascript">
+    function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+</script>
+
 <body>
-    <H1>I HATE YOU WORLD HA HA</H1>
+    <H1>
+        I HATE YOU WORLD HA HA
+        <script>
+            document.write(makeid(37))
+        </script>
+    </H1>
     <img src="bamboozle-quiz-index.png" alt="" >
 </body>
 </html>
