@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2">
     <title>Hello</title>
 </head>
+
+<script type="text/javascript">
+    function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   }
+   return result;
+}
+</script>
+
 <body>
     <H1>Hello World!!</H1>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores mollitia ipsa odit, quas ut ad nulla inventore placeat nisi qui et voluptatibus perferendis totam dolorum aliquid, cupiditate, sed porro nesciunt.</p>
+    <p>
+        <script>
+            document.write(makeid(10))
+        </script>
+
+    </p>
 </body>
 </html>
